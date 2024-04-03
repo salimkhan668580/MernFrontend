@@ -55,9 +55,9 @@ function Modal() {
   const handlePayment = useCallback(async() => {
   
 
-    const order =await axios.post('http://localhost:3000/createOrder',{
-        firstName: 'Fred',
-        lastName: 'Flintstone'
+    const order =await axios.post('https://mernbackend-5j5c.onrender.com/createOrder',{
+        firstName: 'Salim',
+        lastName: 'Khan'
     });
    
 
@@ -74,9 +74,9 @@ function Modal() {
 
       },
       prefill: {
-        name: "Piyush Garg",
-        email: "youremail@example.com",
-        contact: "9999999999",
+        name: "Salim Khan",
+        email: "salimkhan668580s@gmail.com",
+        contact: "78979854999",
       },
       notes: {
         address: "Razorpay Corporate Office",
