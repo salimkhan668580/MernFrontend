@@ -1,0 +1,35 @@
+.img-product{
+    padding: 0;
+    margin: 0;
+    img{
+    width: 100%;
+    height: 100%;
+        
+    }
+}
+
+.order-summary{
+
+    background-color:#adb5bd71;
+    // position: relative;
+    height:fit-content;
+    border-radius: 10px;
+    .payBtn{
+        margin: 50px 0px;
+    //  position: absolute;
+   
+     width: 100%;
+    }
+}
+.priceList ul li{
+    list-style-type: none;
+    
+
+}
+
+.cartListing ul li{
+    list-style-type: none;
+    text-align: left;
+   
+   
+}

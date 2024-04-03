@@ -1,0 +1,11 @@
+.testimonials-container {
+    overflow-x: auto;
+    white-space: nowrap; /* Prevents text from wrapping */
+    max-width: 100%; /* Adjust this as needed */
+  }
+  
+  .testimonial {
+    display: inline-block;
+    margin-right: 20px; /* Adjust as needed */
+    vertical-align: top;
+  }

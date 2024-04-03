@@ -1,0 +1,62 @@
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.nav-link,.navbar-brand{
+    color: black !important;
+    font-weight: 700;
+}
+
+nav{
+    box-shadow: 5px 5px 10px 5px  black;
+}
+// ..................footer................
+
+.footer {
+box-sizing: border-box;
+background-color: black; 
+color: white;
+
+
+padding: 40px 0px;
+.row{
+justify-content: space-between;
+text-align: center;
+   
+  
+}
+
+ul li{
+    list-style-type: none;
+    
+    a{
+     
+        text-decoration: none;
+        color: white;
+    }
+}
+ 
+}
+
+.footer-icon{
+    span{
+        margin-right: 20px;
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        
+    }
+}
+
+// ......................HeroSection.................
+.img_shoping{
+ object-fit: cover;
+ width: 100%;
+    margin: 0px;
+    padding: 0px;
+   
+}
