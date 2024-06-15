@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import HeroSection from '../../components/HeroSection/HeroSection'
 import Service from '../../components/Service/Service'
@@ -8,6 +8,9 @@ import Gallary from '../../components/Gallary/Gallary'
 
 
 function Home({addTOCart}) {
+  useEffect(() => {
+    document.title = 'Home Page';
+  }, []);
   return (
     
     <>

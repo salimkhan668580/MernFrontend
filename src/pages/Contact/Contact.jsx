@@ -1,8 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import toast from 'react-hot-toast';
 import {db} from '../../firebase/firebaseAuth'
 import { collection, addDoc } from "firebase/firestore"; 
 function Contact() { 
+
+  
+  useEffect(() => {
+    document.title = 'Contact Page';
+  }, []);
   let data={name:"",email:"",message:""}
   let [contactData,setContactData]=useState(data)
 

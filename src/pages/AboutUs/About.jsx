@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './About.css'
 
+
 function About() {
+    useEffect(() => {
+        document.title = 'About Page';
+      }, []);
   return (
     <section className="section_all bg-light mt-5" id="about">
             <div className="container">

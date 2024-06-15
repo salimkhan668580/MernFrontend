@@ -51,9 +51,9 @@ let data={email:"",password:""}
   return (
   
       <div className="container-fulid">
-        <div className="row justify-content-center text-white py-5">
-          <div className="col-md-6 py-5 rounded my-5 bg-dark">
-            <h3 className="text-center">Login Page</h3>
+        <div className="row  flex text-cetner mt-5 justify-content-center  text-white py-5">
+          <div className="col-md-6 py-5  rounded bg-dark">
+            <h3 className="text-center text-white">Login Page</h3>
             <form onSubmit={submitHandler}>
        
             <div className="mb-3 px-5">

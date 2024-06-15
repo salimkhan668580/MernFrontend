@@ -23,11 +23,15 @@ function AllProduct({addTOCart }) {
     setSelectedCategory(event.target.value);
    
   };
+  useEffect(() => {
+    document.title = 'All Product';
+  }, []);
   
 useEffect(()=>{
   let getData=async()=>{
     try{
     let catogries=await axios("https://dummyjson.com/products/categories")
+    
     setallCatogries(catogries.data); 
   
   }catch(error){
@@ -89,7 +93,7 @@ getProduct();
     <select  className='text-center  bg-danger text-white form-control' onChange={handleChange} value={selectedCategory} >
         {allCatogries.map((item,index)=>
    (
-    <option  key={index} value={item} >{item}</option>
+    <option  key={index} value={item.slug} >{item.name}</option>
    
    ))}
     
@@ -121,15 +125,15 @@ getProduct();
    (
     <div className="col-md-3 col-12 col-sm-6" key={index}>
 
-    <div className="card my-2">
+    <div className="card my-2 shadow">
     <img src={pd.thumbnail} className="card-img-top" alt="not found"/>
     <div className="card-body">
       <p className="card-text"><b>Titile:</b> {pd.title}</p>
-      <p className="card-text"><b>description :</b>{pd.description}</p>
+      <p className="card-text"><b>description :</b>{pd.description.slice(0,30)}</p>
       <p className="card-text"><b>price :</b>{pd.price} INR</p>
       <div className="row">
         <div className="col-md-6 col-6"> <span className="card-text"><b>rating:</b> &nbsp;{ Math.floor(pd.rating)}</span></div>
-        <div className="col-md-6 col-6"><button className='btn btn-primary' onClick={()=>sendData(pd)}>Add to cart</button></div>
+        <div className="col-md-12 m-2 col-12"><button className='btn form-control btn-primary' onClick={()=>sendData(pd)}>Add to cart</button></div>
       </div>
 
     
